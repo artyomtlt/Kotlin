@@ -2,7 +2,8 @@
 
 package lesson1.task1
 
-import kotlin.math.*
+import kotlin.math.sqrt
+
 
 /**
  * Пример
@@ -23,14 +24,14 @@ fun sqr(x: Double) = x * x
  *
  * Вычисление дискриминанта квадратного уравнения
  */
-fun discriminant(a: Double, b: Double, c: Double) = sqr(b) - 4 * a * c
+fun discriminant(a: Double, b: Double, c: Double): Double = sqr(b) - 4 * a * c
 
 /**
  * Пример
  *
  * Поиск одного из корней квадратного уравнения
  */
-fun quadraticEquationRoot(a: Double, b: Double, c: Double) =
+fun quadraticEquationRoot(a: Double, b: Double, c: Double): Double =
     (-b + sqrt(discriminant(a, b, c))) / (2 * a)
 
 /**
@@ -49,8 +50,8 @@ fun quadraticRootProduct(a: Double, b: Double, c: Double): Double {
  * Пример главной функции
  */
 fun main() {
-    val x1x2 = quadraticRootProduct(1.0, 13.0, 42.0)
-    println("Root product: $x1x2")
+    val result = sqr(7)
+    println("7 * 7 = $result")
 }
 
 /**
