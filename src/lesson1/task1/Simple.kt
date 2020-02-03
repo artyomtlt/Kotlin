@@ -87,7 +87,7 @@ fun angleInRadian(deg: Int, min: Int, sec: Int): Double = TODO()
  */
 fun trackLength(x1: Double, y1: Double, x2: Double, y2: Double): Double = TODO()
 
-/**
+/**ммк
  * Простая
  *
  * Пользователь задает целое число, большее 100 (например, 3801).
